@@ -1,0 +1,103 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Ithius Song Localization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body class="mu">
+
+  <nav class="mu-topbar">
+    <div class="mu-logo">Ithius <span>·</span> Song Localization</div>
+    <ul class="mu-nav">
+      <li><a href="{{ '/' | relative_url }}">Works</a></li>
+      <li><a href="#">Commentary</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="mu-song-header">
+    <div class="mu-accent-bar"></div>
+    <div>
+      <div class="mu-song-title">{{ page.title }}</div>
+      <div class="mu-song-meta">{{ page.artist }} &nbsp;·&nbsp; {{ page.direction }} &nbsp;·&nbsp; {{ page.date | date: "%Y" }}</div>
+    </div>
+  </div>
+
+  <div class="mu-version-bar">
+    <span class="mu-ver-label">Translation</span>
+    {% assign version_keys = page.versions | sort %}
+    {% for v in version_keys reversed %}
+      <button class="mu-ver-btn {% if forloop.first %}active{% endif %}"
+              onclick="setVer('{{ v[0] }}', this)">
+        {{ v[1].label }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="mu-lyric-wrap">
+    <div class="mu-col">
+      <div class="mu-col-label">Original</div>
+      {% for line in page.original_lines %}
+      <div class="mu-line">
+        <span class="mu-line-num">{{ forloop.index }}</span>
+        <span class="mu-line-text">{{ line }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="mu-col">
+      <div class="mu-col-label">
+        <span>Translation · <span id="ver-label"></span></span>
+        <span class="mu-date" id="ver-date"></span>
+      </div>
+      <div id="translation-lines"></div>
+      <div class="mu-ver-note">
+        <div class="mu-ver-note-label">Version note</div>
+        <div class="mu-ver-note-text" id="ver-note-text"></div>
+      </div>
+    </div>
+  </div>
+
+  {% if page.commentary %}
+  <div class="mu-commentary-section">
+    <div class="mu-commentary-label">Translator's note</div>
+    <div class="mu-commentary-text">{{ page.commentary }}</div>
+  </div>
+  {% endif %}
+
+  <script>
+    const versions = {{ page.versions | jsonify }};
+
+    function setVer(key, btn) {
+      document.querySelectorAll('.mu-ver-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const d = versions[key];
+      document.getElementById('ver-label').textContent = d.label;
+      document.getElementById('ver-date').textContent = d.date || '';
+      document.getElementById('ver-note-text').textContent = d.note || '';
+
+      const container = document.getElementById('translation-lines');
+      container.innerHTML = '';
+      d.lines.forEach((line, i) => {
+        const div = document.createElement('div');
+        div.className = 'mu-line';
+        div.innerHTML = `<span class="mu-line-num">${i + 1}</span><span class="mu-line-text th">${line}</span>`;
+        container.appendChild(div);
+      });
+    }
+
+    // โหลด version แรกตอนเปิดหน้า
+    window.onload = () => {
+      const firstBtn = document.querySelector('.mu-ver-btn');
+      if (firstBtn) firstBtn.click();
+    };
+  </script>
+
+</body>
+</html>
