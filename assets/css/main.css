@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.mu { font-family: 'Noto Sans Thai', sans-serif; background: #F7F4EF; color: #2C2820; }
+
+.mu-topbar {
+  background: #F7F4EF; border-bottom: 1.5px solid #2C2820;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 1.5rem; height: 52px;
+}
+.mu-logo { font-family: 'EB Garamond', serif; font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; }
+.mu-logo span { color: #6B1A1A; }
+.mu-nav { display: flex; gap: 1.5rem; list-style: none; }
+.mu-nav a { font-size: 12px; letter-spacing: 0.08em; color: #2C2820; text-decoration: none; }
+
+.mu-song-header {
+  padding: 1.5rem 1.5rem 1rem; border-bottom: 0.5px solid #C4B89A;
+  display: flex; align-items: flex-end; gap: 1rem;
+}
+.mu-accent-bar { width: 3px; height: 56px; background: #6B1A1A; flex-shrink: 0; }
+.mu-song-title { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 400; line-height: 1.2; }
+.mu-song-meta { font-size: 12px; color: #7A6E5F; letter-spacing: 0.06em; margin-top: 4px; }
+
+.mu-version-bar {
+  display: flex; align-items: stretch;
+  border-bottom: 0.5px solid #C4B89A; background: #F7F4EF;
+}
+.mu-ver-label {
+  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #5A5040; font-weight: 700;
+  display: flex; align-items: center;
+  padding: 0 1.25rem;
+  border-right: 1px solid #C4B89A;
+  white-space: nowrap;
+}
+.mu-ver-btn {
+  font-size: 12px; padding: 10px 16px; border: none; background: transparent;
+  color: #5A5040; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  letter-spacing: 0.04em; transition: all 0.15s;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+.mu-ver-btn:hover:not(.active) {
+  color: #6B1A1A;
+  border-bottom-color: #6B1A1A;
+}
+.mu-ver-btn.active { color: #6B1A1A; border-bottom-color: #6B1A1A; font-weight: 500; }
+
+.mu-lyric-wrap { display: grid; grid-template-columns: 1fr 1fr; }
+.mu-col { padding: 1.25rem 1.5rem; }
+.mu-col:first-child { border-right: 0.5px solid #C4B89A; }
+.mu-col-label {
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #7A6E5F; margin-bottom: 1rem; padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid #C4B89A; display: flex; justify-content: space-between; align-items: baseline;
+}
+.mu-date { font-size: 10px; color: #A89880; letter-spacing: 0.06em; text-transform: none; }
+
+.mu-line {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 6px 0; border-bottom: 0.5px solid transparent; min-height: 36px;
+}
+.mu-line:hover { border-bottom-color: #EFE9DE; }
+.mu-line-num { font-size: 10px; color: #C4B89A; min-width: 18px; font-family: 'EB Garamond', serif; padding-top: 2px; }
+.mu-line-text { font-size: 15px; line-height: 1.6; color: #2C2820; font-family: 'Noto Serif JP', serif; font-weight: 300; }
+.mu-line-text.th { font-family: 'Noto Sans Thai', sans-serif; font-size: 14px; }
+
+.mu-ver-note {
+  margin: 0.5rem 0 0.25rem 26px;
+  padding: 0.75rem 1rem;
+  border-left: 2px solid #C4B89A;
+  background: #EFE9DE;
+}
+.mu-ver-note-label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: #6B1A1A; margin-bottom: 4px; }
+.mu-ver-note-text { font-size: 12px; color: #5A5040; line-height: 1.7; }
+
+.mu-commentary-section {
+  margin: 0.5rem 1.5rem 1.5rem;
+  border: 0.5px solid #C4B89A; padding: 1rem 1.25rem; background: #EFE9DE;
+}
+.mu-commentary-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #6B1A1A; margin-bottom: 0.5rem; }
+.mu-commentary-text { font-size: 13px; color: #5A5040; line-height: 1.8; }
