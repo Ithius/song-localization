@@ -1,0 +1,6 @@
+title: Ithius - Song Localization
+description: บทแปลเพลงและ localizer commentary
+collections:
+  songs:
+    output: true
+    permalink: /songs/:name/
