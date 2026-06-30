@@ -1,0 +1,207 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .mu { font-family: 'Noto Sans Thai', sans-serif; background: #F7F4EF; color: #2C2820; }
+  .mu-topbar {
+    background: #F7F4EF; border-bottom: 1.5px solid #2C2820;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 1.5rem; height: 52px;
+  }
+  .mu-logo { font-family: 'EB Garamond', serif; font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .mu-logo span { color: #6B1A1A; }
+  .mu-nav { display: flex; gap: 1.5rem; list-style: none; }
+  .mu-nav a { font-size: 12px; letter-spacing: 0.08em; color: #2C2820; text-decoration: none; }
+
+  .mu-song-header {
+    padding: 1.5rem 1.5rem 1rem; border-bottom: 0.5px solid #C4B89A;
+    display: flex; align-items: flex-end; gap: 1rem;
+  }
+  .mu-accent-bar { width: 3px; height: 56px; background: #6B1A1A; flex-shrink: 0; }
+  .mu-song-title { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 400; line-height: 1.2; }
+  .mu-song-meta { font-size: 12px; color: #7A6E5F; letter-spacing: 0.06em; margin-top: 4px; }
+
+  .mu-version-bar {
+    display: flex; align-items: stretch;
+    border-bottom: 0.5px solid #C4B89A; background: #F7F4EF;
+  }
+  .mu-ver-label {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #5A5040; font-weight: 500;
+    display: flex; align-items: center;
+    padding: 0 1.25rem;
+    border-right: 1px solid #C4B89A;
+    white-space: nowrap;
+  }
+  .mu-ver-btn {
+    font-size: 12px; padding: 10px 16px; border: none; background: transparent;
+    color: #5A5040; cursor: pointer;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 0.04em; transition: all 0.15s;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  .mu-ver-btn:hover:not(.active) {
+    color: #6B1A1A;
+    border-bottom-color: #6B1A1A;
+  }
+  .mu-ver-btn.active { color: #6B1A1A; border-bottom-color: #6B1A1A; font-weight: 500; }
+
+  .mu-lyric-wrap { display: grid; grid-template-columns: 1fr 1fr; }
+  .mu-col { padding: 1.25rem 1.5rem; }
+  .mu-col:first-child { border-right: 0.5px solid #C4B89A; }
+  .mu-col-label {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #7A6E5F; margin-bottom: 1rem; padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid #C4B89A; display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .mu-date { font-size: 10px; color: #A89880; letter-spacing: 0.06em; text-transform: none; }
+
+  .mu-line {
+    display: flex; align-items: baseline; gap: 8px;
+    padding: 6px 0; border-bottom: 0.5px solid transparent; min-height: 36px;
+  }
+  .mu-line:hover { border-bottom-color: #EFE9DE; }
+  .mu-line-num { font-size: 10px; color: #C4B89A; min-width: 18px; font-family: 'EB Garamond', serif; padding-top: 2px; }
+  .mu-line-text { font-size: 15px; line-height: 1.6; color: #2C2820; font-family: 'Noto Serif JP', serif; font-weight: 300; }
+  .mu-line-text.th { font-family: 'Noto Sans Thai', sans-serif; font-size: 14px; }
+
+  .mu-tooltip-wrap { position: relative; display: inline; }
+  .mu-dot {
+    display: inline-block; width: 6px; height: 6px;
+    background: #6B1A1A; border-radius: 50%;
+    margin-left: 2px; cursor: pointer;
+    position: relative; top: -4px;
+  }
+  .mu-tooltip {
+    display: none; position: absolute; bottom: calc(100% + 8px); left: 0;
+    background: #2C2820; color: #F7F4EF;
+    font-size: 12px; line-height: 1.6; padding: 10px 14px;
+    width: 220px; z-index: 10;
+    font-family: 'Noto Sans Thai', sans-serif; font-weight: 300;
+    border-left: 2px solid #6B1A1A;
+  }
+  .mu-tooltip-wrap:hover .mu-tooltip,
+  .mu-tooltip-wrap.open .mu-tooltip { display: block; }
+
+  .mu-ver-note {
+    margin: 0.5rem 0 0.25rem 26px;
+    padding: 0.75rem 1rem;
+    border-left: 2px solid #C4B89A;
+    background: #EFE9DE;
+  }
+  .mu-ver-note-label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: #6B1A1A; margin-bottom: 4px; }
+  .mu-ver-note-text { font-size: 12px; color: #5A5040; line-height: 1.7; }
+
+  .mu-commentary-section {
+    margin: 0.5rem 1.5rem 1.5rem;
+    border: 0.5px solid #C4B89A; padding: 1rem 1.25rem; background: #EFE9DE;
+  }
+  .mu-commentary-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #6B1A1A; margin-bottom: 0.5rem; }
+  .mu-commentary-text { font-size: 13px; color: #5A5040; line-height: 1.8; }
+</style>
+
+<div class="mu">
+  <nav class="mu-topbar">
+    <div class="mu-logo">Ithius <span>·</span> Song Localization</div>
+    <ul class="mu-nav">
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Commentary</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="mu-song-header">
+    <div class="mu-accent-bar"></div>
+    <div>
+      <div class="mu-song-title">Song Title Placeholder</div>
+      <div class="mu-song-meta">Artist Name &nbsp;·&nbsp; JP → TH &nbsp;·&nbsp; 2024</div>
+    </div>
+  </div>
+
+  <div class="mu-version-bar">
+    <span class="mu-ver-label">Translation</span>
+    <button class="mu-ver-btn active" onclick="setVer('final', this)">Final</button>
+    <button class="mu-ver-btn" onclick="setVer('draft2', this)">Draft v2</button>
+    <button class="mu-ver-btn" onclick="setVer('draft1', this)">Draft v1</button>
+  </div>
+
+  <div class="mu-lyric-wrap">
+    <div class="mu-col">
+      <div class="mu-col-label">Original · 原文</div>
+      <div class="mu-line"><span class="mu-line-num">1</span><span class="mu-line-text">夜明けの光の中で</span></div>
+      <div class="mu-line"><span class="mu-line-num">2</span><span class="mu-line-text">君の声が聞こえる</span></div>
+      <div class="mu-line"><span class="mu-line-num">3</span><span class="mu-line-text">遠い記憶の向こうに</span></div>
+      <div class="mu-line"><span class="mu-line-num">4</span><span class="mu-line-text">まだ残る温もりよ</span></div>
+    </div>
+
+    <div class="mu-col">
+      <div class="mu-col-label">
+        <span>Translation · <span id="ver-label">ฉบับสุดท้าย</span></span>
+        <span class="mu-date" id="ver-date">14 มิ.ย. 2567</span>
+      </div>
+
+      <div class="mu-line">
+        <span class="mu-line-num">1</span>
+        <span class="mu-line-text th" id="l1">ท่ามกลางแสงรุ่งอรุณ</span>
+        <span class="mu-tooltip-wrap">
+          <span class="mu-dot" onclick="this.parentElement.classList.toggle('open')"></span>
+          <div class="mu-tooltip">「夜明け」= รุ่งอรุณ / รุ่งสาง — เลือก "รุ่งอรุณ" เพราะให้ความรู้สึกบริสุทธิ์กว่าค่ะ</div>
+        </span>
+      </div>
+      <div class="mu-line"><span class="mu-line-num">2</span><span class="mu-line-text th" id="l2">ฉันได้ยินเสียงของเธอ</span></div>
+      <div class="mu-line">
+        <span class="mu-line-num">3</span>
+        <span class="mu-line-text th" id="l3">ข้ามผ่านความทรงจำอันไกลโพ้น</span>
+        <span class="mu-tooltip-wrap">
+          <span class="mu-dot" onclick="this.parentElement.classList.toggle('open')"></span>
+          <div class="mu-tooltip">「向こうに」แปลตรงคือ "อีกฝั่ง" แต่ "ข้ามผ่าน" ให้ flow กับท่วงทำนองมากกว่าค่ะ</div>
+        </span>
+      </div>
+      <div class="mu-line"><span class="mu-line-num">4</span><span class="mu-line-text th" id="l4">ไออุ่นที่ยังคงหลงเหลือ</span></div>
+
+      <div class="mu-ver-note">
+        <div class="mu-ver-note-label">Version note</div>
+        <div class="mu-ver-note-text" id="ver-note-text">ฉบับสุดท้าย — ปรับ "ไกลโพ้น" เพื่อให้เสียงไหลลื่นขึ้นเมื่อร้อง และเปลี่ยน "แว่วมา" เป็น "ได้ยิน" เพื่อความเรียบง่ายค่ะ</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mu-commentary-section">
+    <div class="mu-commentary-label">Translator's note</div>
+    <div class="mu-commentary-text">
+      บทเพลงนี้ใช้ imagery ของแสงเช้าเพื่อสื่อถึงความทรงจำที่จางลงแต่ยังคงอบอุ่น — โจทย์หลักของการแปลคือรักษา contrast ระหว่าง "ความห่างไกล" กับ "ความอบอุ่น" ไว้พร้อมกันค่ะ
+    </div>
+  </div>
+</div>
+
+<script>
+const versions = {
+  draft1: {
+    label: 'ร่างแรก', date: '',
+    lines: ['ในแสงแห่งรุ่งเช้า', 'ได้ยินเสียงเธอดังก้อง', 'เลยความทรงจำที่ไกลออกไป', 'ไออุ่นที่ยังอยู่'],
+    note: 'ร่างแรก — แปลใกล้ต้นฉบับที่สุด เน้นความหมายตรงตัว ยังไม่ได้ปรับให้เข้ากับท่วงทำนองค่ะ'
+  },
+  draft2: {
+    label: 'ร่างที่สอง', date: '',
+    lines: ['ใต้แสงอรุณรุ่ง', 'เสียงเธอแว่วมาถึงฉัน', 'ข้ามห้วงความทรงจำอันไกล', 'ไออุ่นที่ยังหลงเหลือ'],
+    note: 'ร่างที่สอง — เริ่มปรับ rhythm ให้เข้ากับเมโลดี้ เปลี่ยน "ดังก้อง" เป็น "แว่วมา" เพราะ original มีความนุ่มกว่าค่ะ'
+  },
+  final: {
+    label: 'ฉบับสุดท้าย', date: '14 มิ.ย. 2567',
+    lines: ['ท่ามกลางแสงรุ่งอรุณ', 'ฉันได้ยินเสียงของเธอ', 'ข้ามผ่านความทรงจำอันไกลโพ้น', 'ไออุ่นที่ยังคงหลงเหลือ'],
+    note: 'ฉบับสุดท้าย — ปรับ "ไกลโพ้น" เพื่อให้เสียงไหลลื่นขึ้นเมื่อร้อง และเปลี่ยน "แว่วมา" เป็น "ได้ยิน" เพื่อความเรียบง่ายค่ะ'
+  }
+};
+
+function setVer(v, btn) {
+  document.querySelectorAll('.mu-ver-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const d = versions[v];
+  document.getElementById('ver-label').textContent = d.label;
+  document.getElementById('ver-date').textContent = d.date;
+  document.getElementById('ver-note-text').textContent = d.note;
+  ['l1','l2','l3','l4'].forEach((id, i) => {
+    document.getElementById(id).textContent = d.lines[i];
+  });
+}
+</script>
