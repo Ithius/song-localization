@@ -1,11 +1,45 @@
+---
+layout: default
+---
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>Ithius - Song Localization</title>
+  <meta charset="UTF-8">
+  <title>Ithius - Song Localization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body>
-    <h1>Under Construction</h1>
-    <p>แฟนฉันหายเหลือไว้แต่ไฟแช็ค</p>
+<body class="mu">
+
+  <nav class="mu-topbar">
+    <div class="mu-logo">Ithius <span>·</span> Song Localization</div>
+    <ul class="mu-nav">
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Commentary</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="mu-hero">
+    <div class="mu-accent-bar"></div>
+    <div class="mu-hero-text">
+      <h1>Song Localization<br>& Translation</h1>
+      <p>Thai · English &nbsp;／&nbsp; แปลเพลง · Lyric Commentary</p>
+    </div>
+  </div>
+
+  <p class="mu-section-label">Works</p>
+
+  <div class="mu-grid">
+    {% for song in site.songs %}
+    <a href="{{ song.url | relative_url }}" class="mu-card {% if forloop.first %}mu-card-accent{% endif %}">
+      <div class="mu-card-tag">{{ song.direction }}</div>
+      <div class="mu-card-title">{{ song.title }}</div>
+      <div class="mu-card-sub">{{ song.artist }} · {{ song.date | date: "%Y" }}</div>
+    </a>
+    {% endfor %}
+  </div>
+
 </body>
 </html>
