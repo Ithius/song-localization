@@ -1,4 +1,3 @@
-
 ---
 layout: song
 title: "ดาว - Tell me, Star"
@@ -127,58 +126,37 @@ original_lines:
       - "ก็รับฟังทุกอย่างทุกถ้อยคำ เหมือนความฝัน"
       - "แต่ฉันเองก็ไม่อาจแน่ใจ"
       - "ว่าพรุ่งนี้เรื่องของเราจะสุขหรือแสนเศร้า"
-      
-จึงวอนขอดาวให้ช่วยบอก(ที)
-Because I've just confessed my love
-And they listened to every word, It felt like a dream
-But I just don’t know
-Whether tomorrow brings joy or sorrow
-So I beg the stars… please tell me.
-
-
-
-หากว่าตัวเขา มีใจให้ฉันจริง 
-ฉันขอได้ไหมให้ทุกสิ่งเป็นจริงเรื่อยไป
-ให้ต่อจากวันนี้ เขามีแต่ฉันในหัวใจ 
-จะอธิฐานและขอดวงดาวให้ช่วยฉันสักที
-If by any chance, they were feeling the same
-I wish that everything goes as good as they come
-Let they be mine, and I am only theirs
-So I whisper to the stars. Please, won’t you help me?
-
-เนื่องจากตอนนี้ฉันรู้สึกจิตใจมันอ่อนไหว 
-อยากจะรู้ว่าเขาเป็นยังไงจากคำพูดวันนี้
-Because right now my heart is totally a mess
-What will happen between us after what I said?
-
-เพราะฉันเพิ่งบอกรักไป 
-และเขาก็รับฟังทุกอย่างทุกถ้อยคำ 
-เหมือนความฝัน
-แต่ฉันเองก็ไม่อาจแน่ใจ 
-ว่าพรุ่งนี้เรื่องของเราจะสุขหรือแสนเศร้า
-จึงวอนขอดาวให้ช่วยบอก
-Because I've just confessed my love
-And they listened to every word, It felt like a dream
-But I just don’t know
-Whether tomorrow brings joy or sorrow
-So I beg the stars… please help…
-
-
-ช่วยบอกให้ฉันรู้ ให้มั่นใจ 
-การรอคอยมันยากเกินทนไหว
-ได้โปรดช่วยบอกฉันและตอบหน่อยได้ไหม 
-ว่าพรุ่งนี้เขากับฉันนั้นจะเป็นยังไง
-Please answer me, stars. Console me
-All this wait is killing me slowly
-Because I can’t help but be so afraid
-Did I ruin what we have after what I said?
-
-เพราะฉันเพิ่งบอกรักไป 
-และเขาก็รับฟังทุกอย่างทุกถ้อยคำ 
-เหมือนความฝัน
-แต่ฉันเองก็ไม่อาจแน่ใจ 
-ว่าพรุ่งนี้เรื่องของเราจะสุขหรือแสนเศร้า
-จึงวอนขอดาวให้ช่วยบอก(ที)
+      - "จึงวอนขอดาวให้ช่วยบอกที"
+      - ""
+      - "*Verse 2*"
+      - "หากว่าตัวเขา มีใจให้ฉันจริง"
+      - "ฉันขอได้ไหมให้ทุกสิ่งเป็นจริงเรื่อยไป"
+      - "ให้ต่อจากวันนี้ เขามีแต่ฉันในหัวใจ"
+      - "จะอธิฐานและขอดวงดาวให้ช่วยฉันสักที"
+      - ""
+      - "*Pre-chorus*"
+      - "เนื่องจากตอนนี้ฉันรู้สึกจิตใจมันอ่อนไหว"
+      - "อยากจะรู้ว่าเขาเป็นยังไงจากคำพูดวันนี้"
+      - ""
+      - "*Chorus 2*"
+      - "เพราะฉันเพิ่งบอกรักไป"
+      - "และเขาก็รับฟังทุกอย่างทุกถ้อยคำ เหมือนความฝัน"
+      - "แต่ฉันเองก็ไม่อาจแน่ใจ"
+      - "ว่าพรุ่งนี้เรื่องของเราจะสุขหรือแสนเศร้า"
+      - "จึงวอนขอดาวให้ช่วยบอก..."
+      - ""
+      - "*Bridge*"
+      - "ช่วยบอกให้ฉันรู้ ให้มั่นใจ"
+      - "การรอคอยมันยากเกินทนไหว"
+      - "ได้โปรดช่วยบอกฉันและตอบหน่อยได้ไหม"
+      - "ว่าพรุ่งนี้เขากับฉันนั้นจะเป็นยังไง"
+      - ""
+      - "*Final Verse*"
+      - "เพราะฉันเพิ่งบอกรักไป"
+      - "และเขาก็รับฟังทุกอย่างทุกถ้อยคำ เหมือนความฝัน"
+      - "แต่ฉันเองก็ไม่อาจแน่ใจ"
+      - "ว่าพรุ่งนี้เรื่องของเราจะสุขหรือแสนเศร้า"
+      - "จึงวอนขอดาวให้ช่วยบอกที"
 
 commentary: "เพลงดาวเป็นเพลงที่ผมรัก และเมื่อกลับมาฟัง ผมยิ่งมีความรู้สึกต่างไปหลังจากได้ผ่านประสบการณ์ เหม่อมองเพดานคอยคำตอบตอน ตี3 หลังบังอาจหาญกล้าแสดงความรักออกไป ผมคิดว่ามันเป็นประสบการณ์ที่มนุษย์แทบทุกคนต้องเคยเจอ ผมจึงอยากแปลเป็นภาษาสากล เผื่อมันจะสัมผัสใจดวงอื่นๆบ้าง“
 ---
@@ -187,3 +165,5 @@ Original lyrics & music by [บอย โกสิยพงษ์ Boyd Kosiyabon
 Male version vocal by [อัมรินทร์ เหลืองบริบูรณ์ - โจ้วงพอส](https://youtube.com/@pausebandvevo9743)<br>
 Female version vocal by [Kristin Marie Newell](https://youtube.com/@kristinvevo1509)<br>
 © 1999 Bakery Music / Sony Music Entertainment Operating (Thailand) Co., Ltd.
+
+Thai localization by Ithius for non-commercial use only.
