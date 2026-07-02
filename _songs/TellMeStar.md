@@ -4,7 +4,7 @@ title: "ดาว - Tell me, Star"
 artist: "อัมรินทร์ เหลืองบริบูรณ์ (Male Version) / Kristin Marie Newell (Female Version)"
 direction: "TH → EN"
 song_url: "https://www.youtube.com/watch?v=n_NTET76qZU"
-date: 29/6/2026
+date: 2026-06-29
 versions:
   final:
     label: "Final"
