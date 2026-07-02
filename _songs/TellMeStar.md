@@ -11,7 +11,7 @@ versions:
     date: "2026 JUN 29th"
     lines:
       - "*Verse 1*"
-      - “If a million stars are shining in the sky”
+      - "If a million stars are shining in the sky"
       - “Would one of them look down and notice me”
       - “There is something heavy on my heart tonight”
       - “So I whisper to the star. Please, won’t you help me?”
@@ -64,8 +64,8 @@ versions:
     label: "Draft v1"
     lines:
       - "*Verse 1*"
-      - "If a million stars are shining in the sky“
-      - ”Would anyone of them listen of my plea“
+      - "If a million stars are shining in the sky"
+      - ”Would anyone of them listen of my plea"
       - ”There is something heavy on my heart tonight“
       - ”So I whisper to the stars. Please, won’t you help me?“
       - ””
