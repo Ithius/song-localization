@@ -195,4 +195,4 @@ Original lyrics by [LUMINA](https://t.co/z25ly3MYO9)<br>
 Music by [seibin](https://twitter.com/_seibin)<br>
 Strings Arrangement by [Benicx](https://x.com/Benicx)<br>
 Vocal by [Ninomae Ina'nis](https://x.com/ninomaeinanis)<br>
-© 2026 COVER Corp.
+© 2021 COVER Corp.
