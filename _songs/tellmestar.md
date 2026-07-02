@@ -12,103 +12,103 @@ versions:
     lines:
       - "*Verse 1*"
       - "If a million stars are shining in the sky"
-      - “Would one of them look down and notice me”
-      - “There is something heavy on my heart tonight”
-      - “So I whisper to the star. Please, won’t you help me?”
-      - ““
-      - ”*Pre-chorus 1*“
-      - “Because tonight my heart is a pounding mess”
-      - ”What will happen between us after what I said?“
-      - ”“
-      - ”*Chorus 1*“
-      - ”Because I've just confessed my love“
-      - “And they listened to every word”
-      - “It's like I was dreaming”
-      - “But I just don’t know”
-      - “Whether tomorrow brings joy or sorrow”
-      - “So I beg the star… please tell me.”
-      - “”
-      - “*Verse 2*”
-      - ”Is it too much, if I wish they felt the same“
-      - “I hope everything turns out just as I’d dreamed”
-      - ”Let them be mine, and I’ll be truly theirs“
-      - ”So I wish upon the star. Please, won’t you help me?“
-      - ”“
-      - ”*Pre-chorus*“
-      - “Because right now my heart is a pounding mess”
-      - “What will happen between us after what I said?”
-      - “”
-      - “*Chorus 2*”
-      - “Because I've just confessed my love”
-      - “And they listened to every word”
-      - “It's like I was dreaming”
-      - “But I just don’t know”
-      - “Whether / tomorrow brings joy or sorrow”
-      - “So I beg the star… please help…”
-      - “”
-      - “*Bridge*”
-      - “Would you answer me, star? Please guide me”
-      - “All this waiting’s killing me slowly”
-      - “Because I can’t help but be so afraid”
-      - “Did I ruin what we have after what I said?”
-      - “”
-      - “*Final verse*”
-      - “Because I've just confessed my love”
-      - “And they listened to every word”
-      - “It's like I was dreaming”
-      - “But I just don’t know”
-      - “Whether tomorrow brings joy or sorrow”
-      - “So I beg the star… please tell me.”
+      - "Would one of them look down and notice me"
+      - "There is something heavy on my heart tonight"
+      - "So I whisper to the star. Please, won’t you help me?"
+      - ""
+      - "*Pre-chorus 1*"
+      - "Because tonight my heart is a pounding mess"
+      - "What will happen between us after what I said?"
+      - ""
+      - "*Chorus 1*"
+      - "Because I've just confessed my love"
+      - "And they listened to every word"
+      - "It's like I was dreaming"
+      - "But I just don’t know"
+      - "Whether tomorrow brings joy or sorrow"
+      - "So I beg the star… please tell me."
+      - ""
+      - "*Verse 2*"
+      - "Is it too much, if I wish they felt the same"
+      - "I hope everything turns out just as I’d dreamed"
+      - "Let them be mine, and I’ll be truly theirs"
+      - "So I wish upon the star. Please, won’t you help me?"
+      - ""
+      - "*Pre-chorus*"
+      - "Because right now my heart is a pounding mess"
+      - "What will happen between us after what I said?"
+      - ""
+      - "*Chorus 2*"
+      - "Because I've just confessed my love"
+      - "And they listened to every word"
+      - "It's like I was dreaming"
+      - "But I just don’t know"
+      - "Whether / tomorrow brings joy or sorrow"
+      - "So I beg the star… please help…"
+      - ""
+      - "*Bridge*"
+      - "Would you answer me, star? Please guide me"
+      - "All this waiting’s killing me slowly"
+      - "Because I can’t help but be so afraid"
+      - "Did I ruin what we have after what I said?"
+      - ""
+      - "*Final verse*"
+      - "Because I've just confessed my love"
+      - "And they listened to every word"
+      - "It's like I was dreaming"
+      - "But I just don’t know"
+      - "Whether tomorrow brings joy or sorrow"
+      - "So I beg the star… please tell me."
     note: "ฉบับสุดท้าย — ผมลองสวมวิญญาณวัยรุ่น ม.ปลายที่เพิ่งบอกรักใครไป ซึ่งทำให้คิดประโยคต่างๆได้ง่ายขึ้นและปรับโทนของคำให้ไม่เป็นผู้ใหญ่เกินไป ด้วยความที่เนื้อเพลงมีการวนซ้ำในความหมายเดิมหลายรอบ ผมจึงถามตัวเองว่าคนในสถานการณ์นี้คิดอะไร ผมคิดตกว่าที่คนพูดวกวนซ้ำไปมา อาจมีเหตุเกิดจากความหมกมุ่นกังวลอะไรบางอย่าง นำไปสู่การตัดสินใจเปลี่ยนท่อน bridge ให้ฉีกไปจากเนื้อเดิม"
   draft:
     label: "Draft v1"
     lines:
       - "*Verse 1*"
       - "If a million stars are shining in the sky"
-      - ”Would anyone of them listen of my plea"
-      - ”There is something heavy on my heart tonight“
-      - ”So I whisper to the stars. Please, won’t you help me?“
-      - ””
-      - “*Pre chorus*”
-      - “Because tonight my heart is totally a mess”
-      - “What will happen between us after what I said?”
-      - “”
-      - “*Chorus 1*”
-      - “Because I've just confessed my love”
-      - “And they listened to every word, It felt like a dream”
-      - “But I just don’t know”
-      - “Whether tomorrow brings joy or sorrow”
-      - “So I beg the stars… please tell me”
-      - “”
-      - “*Verse 2*”
-      - “If by any chance, they were feeling the same”
-      - “I wish that everything goes as good as they come”
-      - “Let they be mine, and I am only theirs”
-      - “So I whisper to the stars. Please, won’t you help me?”
-      - “”
-      - “*Pre-chorus*”
-      - “Because right now my heart is totally a mess”
-      - “What will happen between us after what I said?”
-      - “”
-      - “*Chorus 2*”
-      - “Because I've just confessed my love”
-      - “And they listened to every word, It felt like a dream”
-      - “But I just don’t know”
-      - “Whether tomorrow brings joy or sorrow”
-      - “So I beg the stars… please help…”
-      - ””
-      - “*Bridge*”
-      - “Please answer me, stars. Console me”
-      - “I can wait no longer than this”
-      - “Would you notice and tell me, please?”
-      - “The story between us, what tomorrow will be?”
-      - “”
-      - “*Final Verse*”
-      - “Because I've just confessed my love”
-      - “And they listened to every word, It felt like a dream”
-      - “But I just don’t know”
-      - “Whether tomorrow brings joy or sorrow”
-      - “So I beg the stars… please tell me”
+      - "Would anyone of them listen of my plea"
+      - "There is something heavy on my heart tonight"
+      - "So I whisper to the stars. Please, won’t you help me?"
+      - ""
+      - "*Pre chorus*"
+      - "Because tonight my heart is totally a mess"
+      - "What will happen between us after what I said?"
+      - ""
+      - "*Chorus 1*"
+      - "Because I've just confessed my love"
+      - "And they listened to every word, It felt like a dream"
+      - "But I just don’t know"
+      - "Whether tomorrow brings joy or sorrow"
+      - "So I beg the stars… please tell me"
+      - ""
+      - "*Verse 2*"
+      - "If by any chance, they were feeling the same"
+      - "I wish that everything goes as good as they come"
+      - "Let they be mine, and I am only theirs"
+      - "So I whisper to the stars. Please, won’t you help me?"
+      - ""
+      - "*Pre-chorus*"
+      - "Because right now my heart is totally a mess"
+      - "What will happen between us after what I said?"
+      - ""
+      - "*Chorus 2*"
+      - "Because I've just confessed my love"
+      - "And they listened to every word, It felt like a dream"
+      - "But I just don’t know"
+      - "Whether tomorrow brings joy or sorrow"
+      - "So I beg the stars… please help…"
+      - ""
+      - "*Bridge*"
+      - "Please answer me, stars. Console me"
+      - "I can wait no longer than this"
+      - "Would you notice and tell me, please?"
+      - "The story between us, what tomorrow will be?"
+      - ""
+      - "*Final Verse*"
+      - "Because I've just confessed my love"
+      - "And they listened to every word, It felt like a dream"
+      - "But I just don’t know"
+      - "Whether tomorrow brings joy or sorrow"
+      - "So I beg the stars… please tell me"
     note: "ฉบับดราฟ - การแปลประโยคต่อประโยคมีเนื้อหาวกวนและคำไม่สวย จุดนี้ผมคิดว่าต้องแปลงเนื้อหาบางส่วนเพื่อลดความซ้ำซ้อนของคำ น่าแปลกใจที่ตอนฟังต้นฉบับไทยผมกลับไม่รู้สึกอะไรแบบนี้เลย"
 original_lines:
       - "*Verse 1*"
