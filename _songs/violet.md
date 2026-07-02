@@ -190,10 +190,8 @@ original_lines:
 commentary: "สารภาพว่าได้ยินครั้งแรกเมื่อเกือบ 5 ปีก่อน ผมไม่เข้าใจความหมายสักนิด เมื่อเวลาผ่านไป พอเข้าใจความหมายและความงามในเชิงปรัชญาของมัน ผมไม่อยากเก็บไว้กับตัวครับ นี่เป็นงานแรกในหลายปีที่ผมแปลเพลงภาษาญี่ปุ่นเป็นภาษาไทย หวังว่าจะชอบกันครับ"
 ---
 
-Original lyrics by LUMINA ([t.co/z25ly3MYO9])
-Music by seibin ([https://twitter.com/_seibin])
-Strings Arragement by Benicx ([https://x.com/Benicx]) 
-Vocal by Ninomae Ina'nis ([https://x.com/ninomaeinanis])
+Original lyrics by [LUMINA](https://t.co/z25ly3MYO9)<br>
+Music by [seibin](https://twitter.com/_seibin)<br>
+Strings Arrangement by [Benicx](https://x.com/Benicx)<br>
+Vocal by [Ninomae Ina'nis](https://x.com/ninomaeinanis)<br>
 © 2026 COVER Corp.
-
-Thai localization by Ithius for non-commercial use.
