@@ -179,3 +179,8 @@
 .mu-credits a:hover {
   text-decoration: underline;
 }
+
+a.mu-logo {
+  text-decoration: none;
+  color: inherit;
+}
