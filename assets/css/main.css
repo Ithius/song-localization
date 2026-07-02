@@ -70,15 +70,29 @@
 .mu-date { font-size: 10px; color: #A89880; letter-spacing: 0.06em; text-transform: none; }
 
 .mu-line {
-  display: flex; align-items: baseline; gap: 8px;
-  padding: 6px 0; border-bottom: 0.5px solid transparent; min-height: 36px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0;
+  min-height: 44px;        /* เพิ่มจาก 36px */
+  align-items: center;     /* เปลี่ยนจาก baseline เป็น center */
+  border-bottom: 0.5px solid #EFE9DE;
 }
 
 .mu-line:hover { border-bottom-color: #EFE9DE; }
 .mu-line-num { font-size: 10px; color: #C4B89A; min-width: 18px; font-family: 'EB Garamond', serif; padding-top: 2px; }
-.mu-line-text { font-size: 15px; line-height: 1.6; color: #2C2820; font-family: 'Noto Serif JP', serif; font-weight: 300; }
-.mu-line-text.th { font-family: 'Noto Sans Thai', sans-serif; font-size: 14px; }
-
+.mu-line-text {
+  font-size: 14px;         /* ลดให้เท่ากันทั้งสองฝั่ง */
+  line-height: 1.8;
+  color: #2C2820;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+}
+.mu-line-text.th {
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 14px;         /* เท่ากันเลย */
+  line-height: 1.8;        /* เท่ากันเลย */
+}
 .mu-ver-note {
   margin: 0.5rem 0 0.25rem 26px;
   padding: 0.75rem 1rem;
