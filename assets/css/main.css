@@ -2,8 +2,13 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-.mu { font-family: 'Noto Sans Thai', sans-serif; background: #F7F4EF; color: #2C2820; }
-
+.mu {
+  font-family: 'Noto Sans Thai', sans-serif;
+  background: #F7F4EF;
+  color: #2C2820;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .mu-topbar {
   background: #F7F4EF; border-bottom: 1.5px solid #2C2820;
   display: flex; align-items: center; justify-content: space-between;
@@ -83,20 +88,28 @@
 .mu-commentary-text { font-size: 13px; color: #5A5040; line-height: 1.8; }
 
 .mu-hero {
-  display: flex; align-items: flex-end;
-  padding: 3rem 2rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 1.5rem 1.5rem;
   border-bottom: 0.5px solid #C4B89A;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .mu-hero-text h1 {
-  font-family: 'EB Garamond', serif; font-size: 42px;
-  font-weight: 400; line-height: 1.15; margin: 0 0 0.5rem;
-  color: #2C2820; letter-spacing: 0.02em;
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(24px, 5vw, 42px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  color: #2C2820;
+  letter-spacing: 0.02em;
 }
-.mu-hero-text p { font-size: 13px; color: #7A6E5F; letter-spacing: 0.06em; margin: 0; }
-.mu-section-label {
-  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-  color: #7A6E5F; margin: 2rem 2rem 1rem;
+.mu-hero-text p {
+  font-size: 13px;
+  color: #7A6E5F;
+  letter-spacing: 0.06em;
+  margin: 0;
+  flex-wrap: wrap;
 }
 .mu-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
