@@ -196,3 +196,6 @@ Music by [seibin](https://twitter.com/_seibin)<br>
 Strings Arrangement by [Benicx](https://x.com/Benicx)<br>
 Vocal by [Ninomae Ina'nis](https://x.com/ninomaeinanis)<br>
 © 2021 COVER Corp.
+
+
+Thai localization by Ithius for non-commercial use only.
