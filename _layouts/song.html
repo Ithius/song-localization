@@ -86,9 +86,10 @@
       d.lines.forEach((line, i) => {
         const div = document.createElement('div');
         div.className = 'mu-line';
-        div.innerHTML = `<span class="mu-line-num">${i + 1}</span><span class="mu-line-text th">${line}</span>`;
+        const formatted = line.replace(/\*(.*?)\*/g, '<em>$1</em>');
+        div.innerHTML = `<span class="mu-line-num">${i + 1}</span><span class="mu-line-text th">${formatted}</span>`;
         container.appendChild(div);
-      });
+});
     }
 
     // โหลด version แรกตอนเปิดหน้า
