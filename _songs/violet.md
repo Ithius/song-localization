@@ -3,7 +3,7 @@ layout: song
 title: "Violet - คืนม่วงคราม"
 artist: "Ninomae Ina'nis"
 direction: "JP → TH"
-song_url: "[Song Link](https://www.youtube.com/watch?v=8ZdLXELdF9Q)"
+song_url: "https://www.youtube.com/watch?v=8ZdLXELdF9Q"
 date: 27/6/2026
 versions:
   final:
