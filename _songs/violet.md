@@ -1,6 +1,6 @@
 ---
 layout: song
-title: "Violet" - "คืนม่วงคราม"
+title: "Violet - คืนม่วงคราม"
 artist: "Ninomae Ina'nis"
 direction: "JP → TH"
 date: 2026 JUN 27th
