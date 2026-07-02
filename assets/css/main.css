@@ -79,7 +79,10 @@
   border-bottom: 0.5px solid #EFE9DE;
 }
 
-.mu-line:hover { border-bottom-color: #EFE9DE; }
+.mu-line.hovered {
+  background: #F5EEEE;
+  border-bottom-color: #6B1A1A;
+}
 .mu-line-num { font-size: 10px; color: #C4B89A; min-width: 18px; font-family: 'EB Garamond', serif; padding-top: 2px; }
 .mu-line-text {
   font-size: 14px;         /* ลดให้เท่ากันทั้งสองฝั่ง */
