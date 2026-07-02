@@ -101,7 +101,7 @@ versions:
       - “Please answer me, stars. Console me”
       - “I can wait no longer than this”
       - “Would you notice and tell me, please?”
-      - “The story between us, what tomorrow will be?””
+      - “The story between us, what tomorrow will be?”
       - “”
       - “*Final Verse*”
       - “Because I've just confessed my love”
