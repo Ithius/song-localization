@@ -43,11 +43,11 @@
     <div class="mu-col">
       <div class="mu-col-label">Original</div>
       {% for line in page.original_lines %}
-      <div class="mu-line">
+      <div class="mu-line" data-line="{{ forloop.index }}">
         <span class="mu-line-num">{{ forloop.index }}</span>
         <span class="mu-line-text">{{ line }}</span>
-      </div>
-      {% endfor %}
+</div>
+{% endfor %}
     </div>
 
     <div class="mu-col">
@@ -86,6 +86,7 @@
       d.lines.forEach((line, i) => {
         const div = document.createElement('div');
         div.className = 'mu-line';
+        div.setAttribute('data-line', i + 1);
         const formatted = line.replace(/\*(.*?)\*/g, '<em>$1</em>');
         div.innerHTML = `<span class="mu-line-num">${i + 1}</span><span class="mu-line-text th">${formatted}</span>`;
         container.appendChild(div);
@@ -97,6 +98,22 @@
       const firstBtn = document.querySelector('.mu-ver-btn');
       if (firstBtn) firstBtn.click();
     };
+
+    document.addEventListener('mouseover', e => {
+      const line = e.target.closest('.mu-line');
+      if (!line) return;
+      const idx = line.dataset.line;
+      document.querySelectorAll(`.mu-line[data-line="${idx}"]`)
+        .forEach(el => el.classList.add('hovered'));
+    });
+
+    document.addEventListener('mouseout', e => {
+      const line = e.target.closest('.mu-line');
+      if (!line) return;
+      const idx = line.dataset.line;
+      document.querySelectorAll(`.mu-line[data-line="${idx}"]`)
+        .forEach(el => el.classList.remove('hovered'));
+    });
   </script>
 
 </body>
