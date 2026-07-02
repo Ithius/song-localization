@@ -93,6 +93,12 @@
   font-size: 14px;         /* เท่ากันเลย */
   line-height: 1.8;        /* เท่ากันเลย */
 }
+.mu-line-text em {
+  font-style: italic;
+  color: #7A6E5F;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
 .mu-ver-note {
   margin: 0.5rem 0 0.25rem 26px;
   padding: 0.75rem 1rem;
