@@ -1,6 +1,7 @@
 ---
 layout: song
 title: "Song Title Placeholder"
+published: false
 artist: "Artist Name"
 direction: "JP → TH"
 date: 2024-06-14
