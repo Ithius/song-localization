@@ -24,7 +24,13 @@
     <div class="mu-accent-bar"></div>
     <div>
       <div class="mu-song-title">{{ page.title }}</div>
-      <div class="mu-song-meta">{{ page.artist }} &nbsp;·&nbsp; {{ page.direction }} &nbsp;·&nbsp; {{ page.date | date: "%Y" }}</div>
+      <div class="mu-song-meta">
+        {{ page.artist }} &nbsp;·&nbsp; {{ page.direction }} &nbsp;·&nbsp; {{ page.date | date: "%Y" }}
+        {% if page.song_url %}
+  &nbsp;·&nbsp; <a href="{{ page.song_url }}" target="_blank" style="color: #6B1A1A; text-decoration: none; font-size: 11px; letter-spacing: 0.08em;">▶ Listen</a>
+       {% endif %}
+      </div>
+
     </div>
   </div>
 
