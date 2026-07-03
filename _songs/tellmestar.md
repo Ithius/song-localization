@@ -12,7 +12,7 @@ versions:
     lines:
       - "*Verse 1*"
       - "If a million stars are shining in the sky"
-      - "Would one of them look down and notice me"
+      - "Would one of them [look down and notice me]^(เลือกใช้คำนี้เพื่อคง tone ของความแตกตื่นในคนอายุน้อยไว้)"
       - "There is something heavy on my heart tonight"
       - "So I whisper to the star. Please, won’t you help me?"
       - ""
