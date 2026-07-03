@@ -89,25 +89,33 @@
   <script>
     const versions = {{ page.versions | jsonify }};
 
-    function setVer(key, btn) {
-      document.querySelectorAll('.mu-ver-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const d = versions[key];
-      document.getElementById('ver-label').textContent = d.label;
-      document.getElementById('ver-date').textContent = d.date || '';
-      document.getElementById('ver-note-text').textContent = d.note || '';
+    function parseAnnotations(text) {
+  return text.replace(/\[([^\]]+)\]\^\(([^)]+)\)/g, (match, word, note) => {
+    return `${word}<span class="mu-ann-dot" data-note="${note.replace(/"/g, '&quot;')}">●</span>`;
+  });
+}
 
-      const container = document.getElementById('translation-lines');
-      container.innerHTML = '';
-      d.lines.forEach((line, i) => {
-        const div = document.createElement('div');
-        div.className = 'mu-line';
-        div.setAttribute('data-line', i + 1);
-        const formatted = line.replace(/\*(.*?)\*/g, '<em>$1</em>');
-        div.innerHTML = `<span class="mu-line-num">${i + 1}</span><span class="mu-line-text th">${formatted}</span>`;
-        container.appendChild(div);
-});
-    }
+function setVer(key, btn) {
+  document.querySelectorAll('.mu-ver-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const d = versions[key];
+  document.getElementById('ver-label').textContent = d.label;
+  document.getElementById('ver-date').textContent = d.date || '';
+  document.getElementById('ver-note-text').textContent = d.note || '';
+
+  const container = document.getElementById('translation-lines');
+  container.innerHTML = '';
+  d.lines.forEach((line, i) => {
+    const div = document.createElement('div');
+    div.className = 'mu-line';
+    div.setAttribute('data-line', i + 1);
+    const formatted = parseAnnotations(
+      line.replace(/\*(.*?)\*/g, '<em>$1</em>')
+    );
+    div.innerHTML = `<span class="mu-line-num">${i + 1}</span><span class="mu-line-text th">${formatted}</span>`;
+    container.appendChild(div);
+  });
+}
 
     // โหลด version แรกตอนเปิดหน้า
     window.onload = () => {
@@ -130,6 +138,71 @@
       document.querySelectorAll(`.mu-line[data-line="${idx}"]`)
         .forEach(el => el.classList.remove('hovered'));
     });
+
+    // Annotation tooltip
+    const tooltip = document.createElement('div');
+    tooltip.className = 'mu-tooltip-box';
+    document.body.appendChild(tooltip);
+
+    let activeAnn = null;
+
+    document.addEventListener('mouseover', e => {
+      const dot = e.target.closest('.mu-ann-dot');
+      if (!dot) return;
+      showTooltip(dot);
+    });
+
+    document.addEventListener('mouseout', e => {
+      const dot = e.target.closest('.mu-ann-dot');
+      if (!dot) return;
+      if (activeAnn !== dot) hideTooltip();
+    });
+
+    document.addEventListener('click', e => {
+      const dot = e.target.closest('.mu-ann-dot');
+      if (dot) {
+        if (activeAnn === dot) {
+          hideTooltip();
+        } else {
+          showTooltip(dot);
+          activeAnn = dot;
+        }
+        e.stopPropagation();
+        return;
+      }
+      hideTooltip();
+    });
+
+    function showTooltip(dot) {
+      tooltip.textContent = dot.dataset.note;
+      tooltip.classList.add('visible');
+
+      const rect = dot.getBoundingClientRect();
+      const tw = tooltip.offsetWidth;
+      const th = tooltip.offsetHeight;
+      const margin = 8;
+
+  // แนวนอน — ไม่ให้เลยขอบจอ
+      let left = rect.left + window.scrollX;
+      if (left + tw > window.innerWidth - margin) {
+        left = window.innerWidth - tw - margin;
+      }
+      if (left < margin) left = margin;
+
+  // แนวตั้ง — ขึ้นบนก่อน ถ้าไม่พอค่อยลงล่าง
+      let top = rect.top + window.scrollY - th - margin;
+      if (top < window.scrollY + margin) {
+        top = rect.bottom + window.scrollY + margin;
+      }
+
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+    }
+
+    function hideTooltip() {
+      tooltip.classList.remove('visible');
+      activeAnn = null;
+    }
   </script>
 
 </body>
