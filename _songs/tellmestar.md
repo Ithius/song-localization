@@ -167,4 +167,4 @@ Female version vocal by [Kristin Marie Newell](https://youtube.com/@kristinvevo1
 © 1999 Bakery Music / Sony Music Entertainment Operating (Thailand) Co., Ltd.
 
 
-Thai localization by Ithius for non-commercial use only.
+English localization by Ithius for non-commercial use only.
