@@ -191,3 +191,35 @@ a.mu-logo {
   text-decoration: none;
   color: inherit;
 }
+
+.mu-ann-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  background: #6B1A1A;
+  border-radius: 50%;
+  font-size: 0;
+  vertical-align: super;
+  margin-left: 2px;
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+  transition: background 0.15s;
+}
+.mu-ann-dot:hover { background: #8B2A2A; }
+
+.mu-tooltip-box {
+  position: absolute;
+  background: #2C2820;
+  color: #F7F4EF;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 10px 14px;
+  max-width: 260px;
+  border-left: 2px solid #6B1A1A;
+  font-family: 'Noto Sans Thai', sans-serif;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 100;
+}
+.mu-tooltip-box.visible { opacity: 1; }
