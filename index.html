@@ -35,7 +35,9 @@
     <a href="{{ song.url | relative_url }}" class="mu-card {% if forloop.first %}mu-card-accent{% endif %}">
       <div class="mu-card-tag">{{ song.direction }}</div>
       <div class="mu-card-title">{{ song.title }}</div>
-      <div class="mu-card-sub">{{ song.artist }} · {{ song.date | date: "%Y" }}</div>
+      <div class="mu-card-sub">{{ song.artist }}</div>
+      <div class="mu-card-date">Last updated · {{ song.date | date: "%Y, %b %d" }}</div>
+
     </a>
     {% endfor %}
   </div>
