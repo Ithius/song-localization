@@ -1,6 +1,6 @@
 ---
 layout: song
-title: "ดาว - Tell me, Star"
+title: 'ดาว - Tell me, Star'
 artist: "อัมรินทร์ เหลืองบริบูรณ์ (Male Version) / Kristin Marie Newell (Female Version)"
 direction: "TH → EN"
 song_url: "https://www.youtube.com/watch?v=n_NTET76qZU"
