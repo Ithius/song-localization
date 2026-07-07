@@ -223,3 +223,58 @@ a.mu-logo {
   z-index: 100;
 }
 .mu-tooltip-box.visible { opacity: 1; }
+
+.mu-page-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: .5px solid #C4B89A;
+  display: flex; align-items: flex-end; gap: 1rem;
+}
+.mu-page-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px; font-weight: 400; line-height: 1.2;
+}
+.mu-page-sub { font-size: 12px; color: #7A6E5F; letter-spacing: .06em; margin-top: 4px; }
+
+.mu-para-row { display: grid; grid-template-columns: 1fr 1fr; border-bottom: .5px solid #EFE9DE; }
+.mu-para-row:last-of-type { border-bottom: none; }
+.mu-para-cell { padding: 1rem 1.5rem; font-size: 13.5px; line-height: 1.9; color: #3A3228; }
+.mu-para-cell:first-child { border-right: .5px solid #C4B89A; }
+.mu-para-cell em { font-style: italic; color: #6B1A1A; }
+
+.mu-disclaimer-row { display: grid; grid-template-columns: 1fr 1fr; border-top: .5px solid #C4B89A; }
+.mu-disclaimer-cell { padding: 1.25rem 1.5rem; background: #EFE9DE; }
+.mu-disclaimer-cell:first-child { border-right: .5px solid #C4B89A; }
+.mu-disclaimer-label { font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #6B1A1A; margin-bottom: .5rem; }
+.mu-disclaimer-text { font-size: 12px; color: #5A5040; line-height: 1.8; }
+.mu-disclaimer-text ul { margin: .4rem 0 0 1rem; }
+.mu-disclaimer-text li { margin-bottom: .15rem; }
+
+.mu-cc-row { display: grid; grid-template-columns: 1fr 1fr; border-top: .5px solid #C4B89A; background: #F7F4EF; }
+.mu-cc-cell { padding: .875rem 1.5rem; font-size: 11px; color: #7A6E5F; line-height: 1.8; }
+.mu-cc-cell:first-child { border-right: .5px solid #C4B89A; }
+.mu-cc-cell a { color: #6B1A1A; text-decoration: none; }
+.mu-cc-cell a:hover { text-decoration: underline; }
+.mu-cc-cell em { font-style: italic; }
+
+.mu-comm-body { display: grid; grid-template-columns: 1fr 1fr; }
+.mu-comm-col:first-child { border-right: .5px solid #C4B89A; }
+.mu-coming-soon {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; padding: 2.5rem 1.5rem;
+  text-align: center; border: .5px solid #C4B89A; margin: 1.5rem;
+}
+.mu-cs-label { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #A89880; margin-bottom: .75rem; }
+.mu-cs-title { font-family: 'EB Garamond', serif; font-size: 22px; color: #2C2820; margin-bottom: .5rem; }
+.mu-cs-sub { font-size: 13px; color: #7A6E5F; line-height: 1.7; max-width: 260px; }
+.mu-badge { display: inline-block; background: #6B1A1A; color: #F7F4EF; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; padding: 3px 10px; margin-top: 1rem; }
+
+.mu-contact-section { padding: 0 1.5rem 1.5rem; }
+.mu-contact-label-header { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #7A6E5F; padding-bottom: .5rem; border-bottom: .5px solid #C4B89A; margin-bottom: .5rem; }
+.mu-contact-row { display: flex; align-items: center; gap: .75rem; padding: .5rem 0; border-bottom: .5px solid #EFE9DE; }
+.mu-contact-row:last-child { border-bottom: none; }
+.mu-contact-key { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #A89880; min-width: 52px; }
+.mu-contact-val { font-size: 13px; color: #6B1A1A; text-decoration: none; }
+.mu-contact-val:hover { text-decoration: underline; }
+
+a.mu-logo { text-decoration: none; color: inherit; }
+.mu-nav a.active { color: #6B1A1A; border-bottom: 1.5px solid #6B1A1A; padding-bottom: 2px; }
