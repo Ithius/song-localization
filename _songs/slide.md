@@ -123,11 +123,11 @@ original_lines:
 commentary: "เพลงนี้เป็นเพลงที่ผมชอบที่สุด และฟังบ่อยที่สุดของวง PARADOX แต่ช่วงหลังๆเพลาๆลงเพราะเท้ามันเผลอจะไปเหยียบคันเร่งจนมิดโดยไม่รู้ตัว เพลงนี้แปลยากทีเดียวเพราะถ้อยคำที่ใช้มันหนักแน่นแต่ทำให้เป็นประโยคยากเหลือเกิน การแปลคำต่อคำให้สวยแทบเป็นไปไม่ได้ เลยต้องจินตนาการภาพของหนุ่มแว๊นใจเจ็บในหัวแล้วเขียนประโยคใหม่ขึ้นมา มีหลายจุดที่ผมต้องอาศัยการตีความ เช่น 'น้ำกระจาย' นี่มันน้ำอะไรกัน? แล้ว 'หากฉันนอน' นี่หมายถึงอะไร แล้วผมจะ ยั้ยยัยยัย ยังไงดี... แต่จะอย่างไรก็ช่างเถอะ ถ้าผมฟังแล้วโยกหัวได้โดยไม่ต้องคิดมากตั้งแต่ครั้งแรกที่ได้ยินเมื่อยี่สิบกว่าปีก่อน พี่ต้าอาจจะให้อภัยผมที่ตีความไปคนละทิศละทางก็ได้...มั้ง (ผมกราบขออภัยพี่ต้ามาณ.ที่นี้)"
 ---
 
-Producer: อิทธิพงศ์ กฤดากร ณ อยุธยา - Ittipong Kridakorn Na Ayudhaya<br>
-Producer: [PARADOX](https://www.youtube.com/@paradoxthai)<br>
-Lyricist: อิทธิพงศ์ กฤดากร ณ อยุธยา - Ittipong Kridakorn Na Ayudhaya<br>
-Composer: อิทธิพงศ์ กฤดากร ณ อยุธยา - Ittipong Kridakorn Na Ayudhaya<br>
-Arranger: [PARADOX](https://www.youtube.com/@paradoxthai)<br>
+Producer by อิทธิพงศ์ กฤดากร ณ อยุธยา - Ittipong Kridakorn Na Ayudhaya<br>
+Producer by [PARADOX](https://www.youtube.com/@paradoxthai)<br>
+Lyricist by อิทธิพงศ์ กฤดากร ณ อยุธยา - Ittipong Kridakorn Na Ayudhaya<br>
+Composer by อิทธิพงศ์ กฤดากร ณ อยุธยา - Ittipong Kridakorn Na Ayudhaya<br>
+Arranger by [PARADOX](https://www.youtube.com/@paradoxthai)<br>
 ℗ 2000 GMM Music Public Company Limited.
 
 
