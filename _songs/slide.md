@@ -31,7 +31,7 @@ versions:
       - "If I'm down, • this heartache will never die"
       - ""
       - "*Instrumentals*"
-      - "(Hey, you guys! Any louder than this and you'll pack up and leave!)"
+      - "(Hey, you guys! Keep it down or you're packing up!)"
       - ""
       - "*Chrous 2*"
       - "Belt out • on the road"
