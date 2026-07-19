@@ -40,7 +40,7 @@ versions:
       - "If I'm down, • this heartache will be-"
       - ""
       - "*Last Chorus*"
-      - "Racing • down the road"
+      - "Blazing • down the road"
       - "Let the wind • numb the pain inside"
       - "Through fire, • I will ride"
       - "If I'm down • this heartache will never die"
